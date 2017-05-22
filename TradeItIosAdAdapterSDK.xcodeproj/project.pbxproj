@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		75F2E5601ED325E500632EAE /* TradeItIosAdAdapterSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F2E55E1ED325E500632EAE /* TradeItIosAdAdapterSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA2E9990A86EB24966B52A8C /* Pods_TradeItIosAdAdapterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03807CDF5C69D3D71DC042F6 /* Pods_TradeItIosAdAdapterSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03807CDF5C69D3D71DC042F6 /* Pods_TradeItIosAdAdapterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradeItIosAdAdapterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C2960E116F535E81F139615 /* Pods-TradeItIosAdAdapterSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeItIosAdAdapterSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-TradeItIosAdAdapterSDK/Pods-TradeItIosAdAdapterSDK.release.xcconfig"; sourceTree = "<group>"; };
+		6D2C9E94701B6E9B53B2F2FB /* Pods-TradeItIosAdAdapterSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeItIosAdAdapterSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TradeItIosAdAdapterSDK/Pods-TradeItIosAdAdapterSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		75F2E55B1ED325E500632EAE /* TradeItIosAdAdapterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TradeItIosAdAdapterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F2E55E1ED325E500632EAE /* TradeItIosAdAdapterSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradeItIosAdAdapterSDK.h; sourceTree = "<group>"; };
 		75F2E55F1ED325E500632EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -21,17 +25,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2E9990A86EB24966B52A8C /* Pods_TradeItIosAdAdapterSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		557BC7DC2DFFAD5CE347E476 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D2C9E94701B6E9B53B2F2FB /* Pods-TradeItIosAdAdapterSDK.debug.xcconfig */,
+				0C2960E116F535E81F139615 /* Pods-TradeItIosAdAdapterSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		75F2E5511ED325E500632EAE = {
 			isa = PBXGroup;
 			children = (
 				75F2E55D1ED325E500632EAE /* TradeItIosAdAdapterSDK */,
 				75F2E55C1ED325E500632EAE /* Products */,
+				557BC7DC2DFFAD5CE347E476 /* Pods */,
+				A1A38C9D5707F661A968223F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +68,14 @@
 			path = TradeItIosAdAdapterSDK;
 			sourceTree = "<group>";
 		};
+		A1A38C9D5707F661A968223F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03807CDF5C69D3D71DC042F6 /* Pods_TradeItIosAdAdapterSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -70,10 +94,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75F2E5631ED325E500632EAE /* Build configuration list for PBXNativeTarget "TradeItIosAdAdapterSDK" */;
 			buildPhases = (
+				2A90CE71FCDDD8C9795EC807 /* [CP] Check Pods Manifest.lock */,
 				75F2E5561ED325E500632EAE /* Sources */,
 				75F2E5571ED325E500632EAE /* Frameworks */,
 				75F2E5581ED325E500632EAE /* Headers */,
 				75F2E5591ED325E500632EAE /* Resources */,
+				F5F4BB785B8C068870AC606E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +152,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A90CE71FCDDD8C9795EC807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F4BB785B8C068870AC606E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TradeItIosAdAdapterSDK/Pods-TradeItIosAdAdapterSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75F2E5561ED325E500632EAE /* Sources */ = {
@@ -241,6 +300,7 @@
 		};
 		75F2E5641ED325E500632EAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2C9E94701B6E9B53B2F2FB /* Pods-TradeItIosAdAdapterSDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -260,6 +320,7 @@
 		};
 		75F2E5651ED325E500632EAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C2960E116F535E81F139615 /* Pods-TradeItIosAdAdapterSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
