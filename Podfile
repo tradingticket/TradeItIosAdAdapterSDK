@@ -14,6 +14,6 @@ target 'TradeItIosAdAdapterSDK' do
   app_pods
 end
 
-# target 'ExampleApp' do
-  # app_pods
-# end
+target 'ExampleApp' do
+  app_pods
+end

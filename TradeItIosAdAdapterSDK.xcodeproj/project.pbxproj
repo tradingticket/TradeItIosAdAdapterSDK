@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA97506C1B8BFC41779AE38 /* Pods_ExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72581833F1D2BAAF54C5FB71 /* Pods_ExampleApp.framework */; };
+		75B093991ED3356D00A72514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B093981ED3356D00A72514 /* AppDelegate.swift */; };
+		75B0939B1ED3356D00A72514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0939A1ED3356D00A72514 /* ViewController.swift */; };
+		75B0939E1ED3356D00A72514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B0939C1ED3356D00A72514 /* Main.storyboard */; };
+		75B093A01ED3356D00A72514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B0939F1ED3356D00A72514 /* Assets.xcassets */; };
+		75B093A31ED3356D00A72514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B093A11ED3356D00A72514 /* LaunchScreen.storyboard */; };
 		75F2E5601ED325E500632EAE /* TradeItIosAdAdapterSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F2E55E1ED325E500632EAE /* TradeItIosAdAdapterSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA2E9990A86EB24966B52A8C /* Pods_TradeItIosAdAdapterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03807CDF5C69D3D71DC042F6 /* Pods_TradeItIosAdAdapterSDK.framework */; };
 /* End PBXBuildFile section */
@@ -15,12 +21,30 @@
 		03807CDF5C69D3D71DC042F6 /* Pods_TradeItIosAdAdapterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradeItIosAdAdapterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2960E116F535E81F139615 /* Pods-TradeItIosAdAdapterSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeItIosAdAdapterSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-TradeItIosAdAdapterSDK/Pods-TradeItIosAdAdapterSDK.release.xcconfig"; sourceTree = "<group>"; };
 		6D2C9E94701B6E9B53B2F2FB /* Pods-TradeItIosAdAdapterSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeItIosAdAdapterSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TradeItIosAdAdapterSDK/Pods-TradeItIosAdAdapterSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		72581833F1D2BAAF54C5FB71 /* Pods_ExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B093961ED3356D00A72514 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B093981ED3356D00A72514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75B0939A1ED3356D00A72514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75B0939D1ED3356D00A72514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75B0939F1ED3356D00A72514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75B093A21ED3356D00A72514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75B093A41ED3356D00A72514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F2E55B1ED325E500632EAE /* TradeItIosAdAdapterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TradeItIosAdAdapterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F2E55E1ED325E500632EAE /* TradeItIosAdAdapterSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradeItIosAdAdapterSDK.h; sourceTree = "<group>"; };
 		75F2E55F1ED325E500632EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E014E528CC1B184D4AFDCC /* Pods-ExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleApp/Pods-ExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E788785275ECFEA6BC6F63E1 /* Pods-ExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleApp/Pods-ExampleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		75B093931ED3356D00A72514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA97506C1B8BFC41779AE38 /* Pods_ExampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75F2E5571ED325E500632EAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,14 +61,30 @@
 			children = (
 				6D2C9E94701B6E9B53B2F2FB /* Pods-TradeItIosAdAdapterSDK.debug.xcconfig */,
 				0C2960E116F535E81F139615 /* Pods-TradeItIosAdAdapterSDK.release.xcconfig */,
+				79E014E528CC1B184D4AFDCC /* Pods-ExampleApp.debug.xcconfig */,
+				E788785275ECFEA6BC6F63E1 /* Pods-ExampleApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		75B093971ED3356D00A72514 /* ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				75B093981ED3356D00A72514 /* AppDelegate.swift */,
+				75B0939A1ED3356D00A72514 /* ViewController.swift */,
+				75B0939C1ED3356D00A72514 /* Main.storyboard */,
+				75B0939F1ED3356D00A72514 /* Assets.xcassets */,
+				75B093A11ED3356D00A72514 /* LaunchScreen.storyboard */,
+				75B093A41ED3356D00A72514 /* Info.plist */,
+			);
+			path = ExampleApp;
 			sourceTree = "<group>";
 		};
 		75F2E5511ED325E500632EAE = {
 			isa = PBXGroup;
 			children = (
 				75F2E55D1ED325E500632EAE /* TradeItIosAdAdapterSDK */,
+				75B093971ED3356D00A72514 /* ExampleApp */,
 				75F2E55C1ED325E500632EAE /* Products */,
 				557BC7DC2DFFAD5CE347E476 /* Pods */,
 				A1A38C9D5707F661A968223F /* Frameworks */,
@@ -55,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				75F2E55B1ED325E500632EAE /* TradeItIosAdAdapterSDK.framework */,
+				75B093961ED3356D00A72514 /* ExampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				03807CDF5C69D3D71DC042F6 /* Pods_TradeItIosAdAdapterSDK.framework */,
+				72581833F1D2BAAF54C5FB71 /* Pods_ExampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,6 +132,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		75B093951ED3356D00A72514 /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75B093A71ED3356D00A72514 /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				7C8536A7CAE522800248E3C9 /* [CP] Check Pods Manifest.lock */,
+				75B093921ED3356D00A72514 /* Sources */,
+				75B093931ED3356D00A72514 /* Frameworks */,
+				75B093941ED3356D00A72514 /* Resources */,
+				76FAE91E12F9A7F99E393095 /* [CP] Embed Pods Frameworks */,
+				570E82E5AFAB33D2729372F8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleApp;
+			productName = ExampleApp;
+			productReference = 75B093961ED3356D00A72514 /* ExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		75F2E55A1ED325E500632EAE /* TradeItIosAdAdapterSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75F2E5631ED325E500632EAE /* Build configuration list for PBXNativeTarget "TradeItIosAdAdapterSDK" */;
@@ -116,9 +178,15 @@
 		75F2E5521ED325E500632EAE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = TradeIt;
 				TargetAttributes = {
+					75B093951ED3356D00A72514 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 58CRH77TZ6;
+						ProvisioningStyle = Automatic;
+					};
 					75F2E55A1ED325E500632EAE = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 58CRH77TZ6;
@@ -132,6 +200,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 75F2E5511ED325E500632EAE;
 			productRefGroup = 75F2E55C1ED325E500632EAE /* Products */;
@@ -139,11 +208,22 @@
 			projectRoot = "";
 			targets = (
 				75F2E55A1ED325E500632EAE /* TradeItIosAdAdapterSDK */,
+				75B093951ED3356D00A72514 /* ExampleApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		75B093941ED3356D00A72514 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B093A31ED3356D00A72514 /* LaunchScreen.storyboard in Resources */,
+				75B093A01ED3356D00A72514 /* Assets.xcassets in Resources */,
+				75B0939E1ED3356D00A72514 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75F2E5591ED325E500632EAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +235,51 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		2A90CE71FCDDD8C9795EC807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		570E82E5AFAB33D2729372F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExampleApp/Pods-ExampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76FAE91E12F9A7F99E393095 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExampleApp/Pods-ExampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C8536A7CAE522800248E3C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,6 +312,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		75B093921ED3356D00A72514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B0939B1ED3356D00A72514 /* ViewController.swift in Sources */,
+				75B093991ED3356D00A72514 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75F2E5561ED325E500632EAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,7 +330,54 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		75B0939C1ED3356D00A72514 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B0939D1ED3356D00A72514 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75B093A11ED3356D00A72514 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B093A21ED3356D00A72514 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		75B093A51ED3356D00A72514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79E014E528CC1B184D4AFDCC /* Pods-ExampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 58CRH77TZ6;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TradeIt.ExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		75B093A61ED3356D00A72514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E788785275ECFEA6BC6F63E1 /* Pods-ExampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 58CRH77TZ6;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TradeIt.ExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		75F2E5611ED325E500632EAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -341,6 +522,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		75B093A71ED3356D00A72514 /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B093A51ED3356D00A72514 /* Debug */,
+				75B093A61ED3356D00A72514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		75F2E5551ED325E500632EAE /* Build configuration list for PBXProject "TradeItIosAdAdapterSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -357,6 +546,7 @@
 				75F2E5651ED325E500632EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
