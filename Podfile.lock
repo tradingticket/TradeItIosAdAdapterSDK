@@ -20,15 +20,19 @@ PODS:
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK (~> 7.8)
-  - TradeItIosTicketSDK2 (~> 1.1.3)
+  - TradeItIosTicketSDK2 (from `~/workspace/TradeItIosTicketSDK2`)
+
+EXTERNAL SOURCES:
+  TradeItIosTicketSDK2:
+    :path: "~/workspace/TradeItIosTicketSDK2"
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 168312cdc167fa22746d4ea8e839fc4825dd2966
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   PromiseKit: 08dfb783c161ddcd95b7912421f14c5113fd8318
-  TradeItIosTicketSDK2: 8180b39a296e72b7f9e396cdaa13533eca296f77
+  TradeItIosTicketSDK2: 2af78cce1bca944d04210a5f358ab07124c15def
 
-PODFILE CHECKSUM: 0799686e097541d9e94a0ace30f4980eccce6f94
+PODFILE CHECKSUM: e5e8784d778cb838191d8c8098c56ebbed35496c
 
 COCOAPODS: 1.2.1

@@ -1,5 +1,6 @@
 import UIKit
 import TradeItIosTicketSDK2
+import TradeItIosAdAdapterSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -12,6 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             apiKey: "tradeit-test-api-key",
             oAuthCallbackUrl: URL(string: "tradeItAdExampleScheme://completeOAuth")!
         )
+        TradeItSDK.theme = TradeItTheme.dark()
+
+        TradeItAdAdapterSDK.adUnitId = "/24074087/StocksLive"
+        TradeItSDK.adService = TradeItAdService()
         return true
     }
 
