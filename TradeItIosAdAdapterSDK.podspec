@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
   }
 
   s.frameworks = 'UIKit'
-  s.dependency 'TradeItIosTicketSDK2', '~> 1.1.3'
+  s.dependency 'TradeItIosTicketSDK2', '~> 1.1.4'
   s.dependency 'Google-Mobile-Ads-SDK', '~ 7.8'
 end
