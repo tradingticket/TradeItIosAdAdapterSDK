@@ -1,31 +1,31 @@
 import TradeItIosTicketSDK2
 import GoogleMobileAds
 
-@objc public class TradeItAdAdapterSDK: NSObject {
-    public static var adUnitId: String?
-}
+@objc public class TradeItAdService: NSObject, TradeItAdServiceDelegate {
+    private let adUnitId: String
 
-// TODO: Default implementation of AdService that just collapses AdContainers
-@objc public class TradeItAdService: NSObject, TradeItAdServiceProtocol {
-    public override init() {
-
+    public init(adUnitId: String) {
+        self.adUnitId = adUnitId
     }
 
     public func configure(adContainer: UIView, rootViewController: UIViewController, pageType: TradeItAdPageType, position: TradeItAdPosition) {
-        guard let adUnitId = TradeItAdAdapterSDK.adUnitId else { return }
-
-        let size = kGADAdSizeLargeBanner
-
-        let adView = DFPBannerView(adSize: size)
+        let adView = DFPBannerView(adSize: sizeFor(adContainer: adContainer))
         adContainer.addSubview(adView)
         adView.adUnitID = adUnitId
         adView.rootViewController = rootViewController
         let request = DFPRequest()
-        request.testDevices = [kGADSimulatorID]
         request.customTargeting = [
             "pgtype": TradeItAdPageType.labelFor(pageType),
             "pos": TradeItAdPosition.labelFor(position)
         ]
         adView.load(request)
+    }
+
+    private func sizeFor(adContainer: UIView) -> GADAdSize {
+        if adContainer.frame.height == 100 {
+            return kGADAdSizeLargeBanner
+        } else {
+            return kGADAdSizeBanner
+        }
     }
 }

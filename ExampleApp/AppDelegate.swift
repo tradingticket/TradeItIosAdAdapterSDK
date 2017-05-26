@@ -7,7 +7,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         TradeItSDK.configure(
             apiKey: "tradeit-test-api-key",
@@ -15,8 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
         TradeItSDK.theme = TradeItTheme.dark()
 
-        TradeItAdAdapterSDK.adUnitId = "/24074087/StocksLive"
-        TradeItSDK.adService = TradeItAdService()
+        TradeItSDK.adService = TradeItAdService(adUnitId: "/24074087/StocksLive")
         return true
     }
 
