@@ -1,14 +1,14 @@
 import TradeItIosTicketSDK2
 import GoogleMobileAds
 
-@objc public class TradeItAdService: NSObject, TradeItAdServiceDelegate {
+@objc public class TradeItAdService: NSObject, AdService {
     private let adUnitId: String
 
     public init(adUnitId: String) {
         self.adUnitId = adUnitId
     }
 
-    public func configure(adContainer: UIView, rootViewController: UIViewController, pageType: TradeItAdPageType, position: TradeItAdPosition) {
+    public func populate(adContainer: UIView, rootViewController: UIViewController, pageType: TradeItAdPageType, position: TradeItAdPosition) {
         let adView = DFPBannerView(adSize: sizeFor(adContainer: adContainer))
         adContainer.addSubview(adView)
         adView.adUnitID = adUnitId
