@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
         TradeItSDK.theme = TradeItTheme.dark()
 
-        TradeItSDK.adService = TradeItAdService(adUnitId: "/24074087/StocksLive")
+        TradeItSDK.adService = TradeItAdService(adUnitId: "/24074087/TradeIt.Test1")
         return true
     }
 
