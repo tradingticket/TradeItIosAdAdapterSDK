@@ -17,12 +17,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'TradeItIosAdAdapterSDK/**/*.{swift,h}'
 
-  s.resource_bundles = {
-    'TradeItIosAdAdapterSDK' => [
-      'TradeItIosAdAdapterSDK/**/*.{storyboard,xib,png}'
-    ]
-  }
-
   s.frameworks = 'UIKit'
   s.dependency 'TradeItIosTicketSDK2', '~> 1.1.4'
   s.dependency 'Google-Mobile-Ads-SDK', '~> 7.8'
