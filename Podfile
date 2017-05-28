@@ -7,8 +7,6 @@ use_frameworks!
 
 def app_pods
   pod 'TradeItIosTicketSDK2', path: '~/workspace/TradeItIosTicketSDK2'
-  # pod 'TradeItIosTicketSDK2', '~> 1.1.3'
-  pod 'Google-Mobile-Ads-SDK', '~> 7.8'
 end
 
 target 'TradeItIosAdAdapterSDK' do
