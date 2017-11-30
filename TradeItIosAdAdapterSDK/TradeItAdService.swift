@@ -8,7 +8,16 @@ import GoogleMobileAds
         self.adUnitId = adUnitId
     }
 
-    public func populate(adContainer: UIView, rootViewController: UIViewController, pageType: TradeItAdPageType, position: TradeItAdPosition) {
+    public func populate(
+        adContainer: UIView,
+        rootViewController: UIViewController,
+        pageType: TradeItAdPageType,
+        position: TradeItAdPosition,
+        broker: String?,
+        symbol: String?,
+        instrumentType: String?,
+        trackPageViewAsPageType: Bool
+    ) {
         let adView = DFPBannerView(adSize: sizeFor(adContainer: adContainer))
         adContainer.addSubview(adView)
         adView.adUnitID = adUnitId
@@ -16,8 +25,11 @@ import GoogleMobileAds
         let request = DFPRequest()
         request.customTargeting = [
             "pgtype": TradeItAdPageType.labelFor(pageType),
-            "pos": TradeItAdPosition.labelFor(position)
+            "pos": TradeItAdPosition.labelFor(position),
         ]
+        if let ticker = symbol {
+            request.customTargeting!["ticker"] = ticker
+        }
         adView.load(request)
     }
 
