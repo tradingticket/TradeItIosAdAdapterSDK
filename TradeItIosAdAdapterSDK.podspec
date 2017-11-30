@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TradeItIosAdAdapterSDK'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Trade It iOS Ad Adapter SDK'
 
   s.description      = <<-DESC
@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
 
   s.preserve_paths = 'GoogleMobileAds.framework'
   s.vendored_frameworks = 'GoogleMobileAds.framework'
-  s.dependency 'TradeItIosTicketSDK2', '~> 1.1.4'
+  s.dependency 'TradeItIosTicketSDK2', '~> 1.1.36'
   s.frameworks = 'UIKit', 'GoogleMobileAds'
 end
