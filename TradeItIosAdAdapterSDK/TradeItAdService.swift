@@ -23,13 +23,14 @@ import GoogleMobileAds
         adView.adUnitID = adUnitId
         adView.rootViewController = rootViewController
         let request = DFPRequest()
-        request.customTargeting = [
+        var customTargeting = [
             "pgtype": TradeItAdPageType.labelFor(pageType),
-            "pos": TradeItAdPosition.labelFor(position),
+            "pos": TradeItAdPosition.labelFor(position)
         ]
         if let ticker = symbol {
-            request.customTargeting!["ticker"] = ticker
+            customTargeting["ticker"] = ticker
         }
+        request.customTargeting = customTargeting
         adView.load(request)
     }
 
