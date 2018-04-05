@@ -1,4 +1,5 @@
 PODS:
+  - BEMCheckBox (1.4.1)
   - JSONModel (1.7.0)
   - MBProgressHUD (1.0.0)
   - PromiseKit (4.2.0):
@@ -12,7 +13,8 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (4.2.0):
     - PromiseKit/CorePromise
-  - TradeItIosTicketSDK2 (1.1.4):
+  - TradeItIosTicketSDK2 (1.1.43):
+    - BEMCheckBox (~> 1.4.1)
     - JSONModel (~> 1.7.0)
     - MBProgressHUD (~> 1.0.0)
     - PromiseKit (~> 4.0)
@@ -22,14 +24,15 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   TradeItIosTicketSDK2:
-    :path: "~/workspace/TradeItIosTicketSDK2"
+    :path: ~/workspace/TradeItIosTicketSDK2
 
 SPEC CHECKSUMS:
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   PromiseKit: 08dfb783c161ddcd95b7912421f14c5113fd8318
-  TradeItIosTicketSDK2: 6c577e98b953667fc73e01af790fa28844cce6aa
+  TradeItIosTicketSDK2: bd8977050f2a37e0cf76a50d24837d3d6a907b91
 
 PODFILE CHECKSUM: a9e272a33675e0748e4df6d4d6d1a44012dd876f
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0
