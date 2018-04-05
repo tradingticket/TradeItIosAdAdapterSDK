@@ -3,9 +3,15 @@ import GoogleMobileAds
 
 @objc public class TradeItAdService: NSObject, AdService {
     private let adUnitId: String
+    private let theme: TradeItAdTheme
 
-    public init(adUnitId: String) {
+    public convenience init(adUnitId: String) {
+        self.init(adUnitId: adUnitId, theme: TradeItAdTheme.light)
+    }
+
+    public init(adUnitId: String, theme: TradeItAdTheme = TradeItAdTheme.light) {
         self.adUnitId = adUnitId
+        self.theme = theme
     }
 
     public func populate(
@@ -23,6 +29,8 @@ import GoogleMobileAds
         adView.adUnitID = adUnitId
         adView.rootViewController = rootViewController
         let request = DFPRequest()
+        request.testDevices = [kGADSimulatorID]
+
         var customTargeting = [
             "pgtype": TradeItAdPageType.labelFor(pageType),
             "pos": TradeItAdPosition.labelFor(position)
@@ -30,6 +38,10 @@ import GoogleMobileAds
         if let ticker = symbol {
             customTargeting["ticker"] = ticker
         }
+        if theme == .dark {
+            customTargeting["theme"] = "dark"
+        }
+
         request.customTargeting = customTargeting
         adView.load(request)
     }
@@ -41,4 +53,9 @@ import GoogleMobileAds
             return kGADAdSizeBanner
         }
     }
+}
+
+@objc public enum TradeItAdTheme: Int {
+    case light
+    case dark
 }
